@@ -5,8 +5,8 @@ public class Personne(int id,
                       string nom,
                       string email)
 {
-    public int Id { get; } = id;
-    public string Prenom { get; } = prenom;
-    public string Nom { get; } = nom;
-    public string Email { get; } = email;
+    public int Id { get; set; } = id;
+    public string Prenom { get; set; } = prenom;
+    public string Nom { get; set; } = nom;
+    public string Email { get; set; } = email;
 }
