@@ -10,8 +10,6 @@ public class AppDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         // SQLite file "app.db" à la racine
-        //optionsBuilder.UseSqlite("Data Source=app.db");
-
         var path = Path.Combine(AppContext.BaseDirectory, "app.db");
         optionsBuilder.UseSqlite($"Data Source={path}");
         Console.WriteLine(path);

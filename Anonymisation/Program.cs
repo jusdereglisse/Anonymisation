@@ -14,9 +14,9 @@ const string emailQuelconque = "thierryturcotte@hotmail.com";
 if (db.Personnes != null)
 {
     db.Personnes.Add(new Personne(id,
-                                   prenomQuelconque,
-                                   nomQuelconque,
-                                   emailQuelconque));
+                                  prenomQuelconque,
+                                  nomQuelconque,
+                                  emailQuelconque));
     db.SaveChanges();
 
     // Données de prod
